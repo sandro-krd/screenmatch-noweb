@@ -20,7 +20,7 @@ public class ScreenmatchApplication implements CommandLineRunner {
 		var json = consumoApi.obterDados("http://www.omdbapi.com/?t=supernatural&apikey=ed387ecd");
 		System.out.println(json);
 		ConverteDados conversor = new ConverteDados();
-		DadosSerie dados = conversor.obterDados(json, DadosSerie.class);
-		System.out.println(dados);
+		DadosSerie dados1 = conversor.obterDados(json, DadosSerie.class);
+		System.out.println(dados1);
 	}
 }
